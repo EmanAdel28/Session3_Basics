@@ -116,6 +116,11 @@
             //false | true => true
             //false | false => false
             #endregion
+
+            #region Ternary Operator [Conditional Operator]
+
+            //String Message  = X > 4 ? "X Greater Than 4" : "X Less Than 4"
+            #endregion
             #endregion
 
 
