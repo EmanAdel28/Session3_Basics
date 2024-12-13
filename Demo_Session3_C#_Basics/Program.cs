@@ -99,6 +99,23 @@
             //false || true => true
             //false || false => false
             #endregion
+
+            #region Bitwise Operator [Long Circute]
+
+            Console.WriteLine(true & false);
+
+            //true & true  => true
+            //true & false => false
+            //false & true => false
+            //false & false => false
+
+            Console.WriteLine(true | false);
+
+            //true | true  => true
+            //true | false => true
+            //false | true => true
+            //false | false => false
+            #endregion
             #endregion
 
 
