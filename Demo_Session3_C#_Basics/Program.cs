@@ -29,25 +29,39 @@
             #endregion
 
             #region 3- Write a program that takes 3 integers from the user then prints the max element and the min element.
-            Console.WriteLine("Enter 3 integers ");
-            Console.Write("Entser Number 01 :  ");
-            int num1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter 3 integers ");
+            //Console.Write("Entser Number 01 :  ");
+            //int num1 = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter Number 02 : ");
-            int num2 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Number 02 : ");
+            //int num2 = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter Number 03 : ");
-            int num3 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Number 03 : ");
+            //int num3 = int.Parse(Console.ReadLine());
 
-            // Find the maximum and minimum values
-            int max = Math.Max(num1, Math.Max(num2, num3));
-            int min = Math.Min(num1, Math.Min(num2, num3));
+            //// Find the maximum and minimum values
+            //int max = Math.Max(num1, Math.Max(num2, num3));
+            //int min = Math.Min(num1, Math.Min(num2, num3));
 
-            // Print the results
-            Console.WriteLine($"The Maximum number is: {max}");
-            Console.WriteLine($"The Minimum number is: {min}");
+            //// Print the results
+            //Console.WriteLine($"The Maximum number is: {max}");
+            //Console.WriteLine($"The Minimum number is: {min}");
 
-          
+
+
+
+
+
+            #endregion
+
+            #region 4- Write a program that allows the user to insert an integer number then check If a number is even or odd.
+            Console.Write("Entser Number ");
+            int Number = int.Parse(Console.ReadLine());
+
+            if (Number % 2 == 0)
+                Console.WriteLine("Number is even");
+            else
+                Console.WriteLine("Number is odd");
 
 
 
