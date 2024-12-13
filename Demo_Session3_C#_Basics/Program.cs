@@ -17,13 +17,39 @@
             #endregion
 
             #region 2- Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
-            Console.WriteLine("Enter Number :");
-            int Num = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Number :");
+            //int Num = int.Parse(Console.ReadLine());
 
-            if (Num < 0)
-                Console.WriteLine("It Is Negative Number");
-            else
-                Console.WriteLine("It Is Positive Number");
+            //if (Num < 0)
+            //    Console.WriteLine("It Is Negative Number");
+            //else
+            //    Console.WriteLine("It Is Positive Number");
+
+
+            #endregion
+
+            #region 3- Write a program that takes 3 integers from the user then prints the max element and the min element.
+            Console.WriteLine("Enter 3 integers ");
+            Console.Write("Entser Number 01 :  ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Number 02 : ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Number 03 : ");
+            int num3 = int.Parse(Console.ReadLine());
+
+            // Find the maximum and minimum values
+            int max = Math.Max(num1, Math.Max(num2, num3));
+            int min = Math.Min(num1, Math.Min(num2, num3));
+
+            // Print the results
+            Console.WriteLine($"The Maximum number is: {max}");
+            Console.WriteLine($"The Minimum number is: {min}");
+
+          
+
+
 
 
             #endregion
