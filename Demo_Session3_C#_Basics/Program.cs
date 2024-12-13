@@ -160,8 +160,8 @@ namespace Demo_Session3_C__Basics
             #endregion
 
             #region IF Else - Switch Case
-            Console.WriteLine("Enter Month Number");
-            int MonthNumber = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Month Number");
+            //int MonthNumber = int.Parse(Console.ReadLine());
 
             // 1 => Month is Jan
             // 2 => Month is Feb
@@ -197,30 +197,89 @@ namespace Demo_Session3_C__Basics
             #endregion
 
             #region GOTO
-            Console.WriteLine("Enter Option");
-            int option = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Option");
+            //int option = int.Parse(Console.ReadLine());
 
             // 3000 => "Option 01" , "Option 02" , "Option 03"
             // 2000 => "Option 01" , "Option 02" 
             // 1000 => "Option 01" 
 
-            switch(option)
-            {
-                case 3000:
-                    Console.WriteLine("Option 03");
-                    goto case 2000;
-                case 2000:
-                    Console.WriteLine("Option 02");
-                    goto case 1000;
-                case 1000:
-                    Console.WriteLine("Option 01");
-                    break;
+            //switch(option)
+            //{
+            //    case 3000:
+            //        Console.WriteLine("Option 03");
+            //        goto case 2000;
+            //    case 2000:
+            //        Console.WriteLine("Option 02");
+            //        goto case 1000;
+            //    case 1000:
+            //        Console.WriteLine("Option 01");
+            //        break;
 
-            }
+            //}
 
 
 
             #endregion
+
+            #region Evaluation of Switch Case
+            #region C# 06
+            int age = int.Parse(Console.ReadLine());
+
+            switch(age)
+            {
+                case > 22:
+                    Console.WriteLine("Age Greater than 22");
+                    break;
+                case < 22:
+                    Console.WriteLine("Age less than 22");
+                    break;
+                default:
+                    Console.WriteLine("Age Equale 22");
+                    break;
+
+
+
+            }
+            #endregion
+            #region C# 07
+            object obj = new object();
+            obj = 22;
+            switch (obj)
+            {
+                case  int Number when Number >10 && Number < 20:
+                    Console.WriteLine($"{Number} is int");
+                    break;
+                case string Name:
+                    Console.WriteLine($"{Name} is String");
+                    break;
+                case bool Flag:
+                    Console.WriteLine($"{Flag} is bool");
+                    break;
+            }
+            #endregion
+            #region C# 08
+            Console.WriteLine("Enter Option");
+            int option = int.Parse(Console.ReadLine());
+
+            String Mess = option switch
+            {
+                1 => "Option 01",
+                2 => "Option 02",
+                3 => "Option 03",
+                _ => "Invalid"
+
+            };
+            Console.WriteLine(Mess);
+            #endregion
+            #region C# 09
+            { Age: > 22 and <25}
+            { Age: > 25 or < 23}
+            { Age: not 25}  
+
+            #endregion
+            #endregion
+
 
         }
     }
