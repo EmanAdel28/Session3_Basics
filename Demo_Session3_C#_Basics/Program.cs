@@ -69,23 +69,37 @@
             #endregion
 
             #region 5- Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant).
-            Console.Write("Enter Character : ");
-            Char Character = Char.Parse(Console.ReadLine());
+            //Console.Write("Enter Character : ");
+            //Char Character = Char.Parse(Console.ReadLine());
 
-            switch (Character)
+            //switch (Character)
+            //{
+            //    case 'a' or 'A':
+            //    case 'e' or 'E':
+            //    case 'i' or 'I':
+            //    case 'o' or 'O':
+            //    case 'u' or 'U':
+            //        Console.Write("Vowel");
+            //        break;
+            //    default:
+            //        Console.Write("Consonant");
+            //        break;
+
+
+            //}
+
+            #endregion
+
+            #region 7- Write a program that allows the user to insert an integer then print a multiplication table up to 12.
+            Console.Write("Entser Number ");
+            int Number = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"multiplication table for {Number} : ");
+
+            for (int i = 1 ; i<= 12 ; i++)
             {
-                case 'a' or 'A':
-                case 'e' or 'E':
-                case 'i' or 'I':
-                case 'o' or 'O':
-                case 'u' or 'U':
-                    Console.Write("Vowel");
-                    break;
-                default:
-                    Console.Write("Consonant");
-                    break;
-
-
+                int Mult = i * Number;
+                Console.WriteLine($" {Number} * {i}  = {Mult}");
             }
 
             #endregion
