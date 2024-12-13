@@ -40,6 +40,10 @@
             double Salary = Convert.ToDouble(Console.ReadLine());
             #endregion
 
+            #region Operators
+
+            #endregion
+
             #endregion
         }
     }
