@@ -12,13 +12,27 @@
             #endregion
 
             #region Explicit Casting - UnSafe Casting
-            long X = 101010101010;
-            int Y;
-            checked
-            {
-                Y = (int)X;
-            }
-            Console.WriteLine(Y);
+            //long X = 101010101010;
+            //int Y;
+            //checked
+            //{
+            //    Y = (int)X;
+            //}
+            //Console.WriteLine(Y);
+            #endregion
+
+            #region Parse [Convert from String to any Datatype]
+            //int Number = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Data");
+            Console.WriteLine("Enter Name : ");
+            string Name = Console.ReadLine();
+
+            Console.WriteLine("Enter Age : ");
+            int Age = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Salary : ");
+            double Salary = double.Parse(Console.ReadLine());
             #endregion
 
             #endregion
