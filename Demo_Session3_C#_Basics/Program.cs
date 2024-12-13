@@ -272,7 +272,13 @@ namespace Demo_Session3_C__Basics
             };
             Console.WriteLine(Mess);
             #endregion
-            
+            #region C# 09
+            { Age: > 22 and < 25}
+            { Age: > 25 or < 23}
+            { Age: not 25}
+
+            #endregion
+
 
 
             #endregion
