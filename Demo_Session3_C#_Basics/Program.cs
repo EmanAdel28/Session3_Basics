@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace Demo_Session3_C__Basics
 {
@@ -153,6 +154,42 @@ namespace Demo_Session3_C__Basics
             // string Interpolation => $
          
             Console.WriteLine($"Equation = {X} + {Y} = {Result}");
+            #endregion
+
+            #region IF Else - Switch Case
+            Console.WriteLine("Enter Month Number");
+            int MonthNumber = int.Parse(Console.ReadLine());
+
+            // 1 => Month is Jan
+            // 2 => Month is Feb
+            // 3 => Month is Mar
+            //  Invalid Input
+
+            //if (MonthNumber == 1)
+            //    Console.WriteLine("Month is Jan");
+            //else if (MonthNumber == 2)
+            //    Console.WriteLine("Month is Feb");
+            //else if (MonthNumber == 3)
+            //    Console.WriteLine("Month is Mar");
+            //else
+            //    Console.WriteLine("Invalid Input");
+
+
+            //switch(MonthNumber)
+            //    {
+            //    case 1:
+            //        Console.WriteLine("Month is Jan");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Month is Feb");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Month is Mar");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid Input");
+            //        break;
+            //}
             #endregion
 
 
