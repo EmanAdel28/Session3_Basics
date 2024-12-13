@@ -39,6 +39,7 @@
             int Age = Convert.ToInt32(Console.ReadLine());
             double Salary = Convert.ToDouble(Console.ReadLine());
             #endregion
+            #endregion
 
             #region Operators
             #region Unary Operators [++ , --]
@@ -53,21 +54,30 @@
             #endregion
 
             #region Binary Operator
-            int Sum, Mul, Sub, Div, Mod;
+            //int Sum, Mul, Sub, Div, Mod;
 
-            int A = 10;
-            int B = 5;
+            //int A = 10;
+            //int B = 5;
 
-            Sum = A + B; 
-            Sub = A - B;
-            Div = A / B;
-            Mul = A * B;
-            Mod = A % B;
-            Console.WriteLine(Sum);
+            //Sum = A + B; 
+            //Sub = A - B;
+            //Div = A / B;
+            //Mul = A * B;
+            //Mod = A % B;
+            //Console.WriteLine(Sum);
+            #endregion
+
+            #region Assignment Operator
+            X = 10;
+            X += 10;
+            X -= 10;
+            X *= 10;
+            X /= 10;
+            X %= 10;
             #endregion
             #endregion
 
-            #endregion
+
         }
     }
 }
