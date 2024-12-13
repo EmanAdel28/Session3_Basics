@@ -295,8 +295,8 @@ namespace Demo_Session3_C__Basics
             #endregion
 
             #region 23- Which of the following statements is correct about the C#.NET code snippet given below?
-            int d;
-            d = Convert.ToInt32(!(30 < 20));
+            //int d;
+            //d = Convert.ToInt32(!(30 < 20));
 
             // (30 < 20) => false
             // !(30 < 20) => !(false) => true
@@ -305,6 +305,18 @@ namespace Demo_Session3_C__Basics
 
             // the correct statement is : b) A value 1 will be assigned to d.
             #endregion
+
+            #region 24- Which of the following is the correct output for the C# code given below? Console.WriteLine(13 / 2 + " " + 13 % 2)
+
+            Console.WriteLine(13 / 2 + " " + 13 % 2);
+
+            // 13 / 2 = 6.5
+            // 13 % 2 = 1
+
+            // Correct Statement is  d) 6.5  1
+
+            #endregion
+
         }
     }
 }
