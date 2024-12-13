@@ -51,6 +51,20 @@
             Console.WriteLine(X--);
             Console.WriteLine(X);
             #endregion
+
+            #region Binary Operator
+            int Sum, Mul, Sub, Div, Mod;
+
+            int A = 10;
+            int B = 5;
+
+            Sum = A + B; 
+            Sub = A - B;
+            Div = A / B;
+            Mul = A * B;
+            Mod = A % B;
+            Console.WriteLine(Sum);
+            #endregion
             #endregion
 
             #endregion
