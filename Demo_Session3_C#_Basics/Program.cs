@@ -106,23 +106,56 @@
 
             #region 9- Write a program that takes two integers then prints the power.
 
-            Console.WriteLine("Entser Two Number ");
+            //Console.WriteLine("Entser Two Number ");
 
-            Console.Write("Entser  Number 01 :  ");
-            int Number1 = int.Parse(Console.ReadLine());
-            Console.Write("Entser  Number 02 :  ");
-            int Number2 = int.Parse(Console.ReadLine());
-            int Power=1;
+            //Console.Write("Entser  Number 01 :  ");
+            //int Number1 = int.Parse(Console.ReadLine());
+            //Console.Write("Entser  Number 02 :  ");
+            //int Number2 = int.Parse(Console.ReadLine());
+            //int Power=1;
 
 
-            for (int i = 1; i <= Number2; i++)
-            {
-                 Power = Power * Number1;
+            //for (int i = 1; i <= Number2; i++)
+            //{
+            //     Power = Power * Number1;
 
-            }
+            //}
             
 
-            Console.Write($" {Number1} Power {Number2} is : {Power} ");
+            //Console.Write($" {Number1} Power {Number2} is : {Power} ");
+
+
+            #endregion
+
+            #region 10- Write a program to enter marks of five subjects and calculate total, average and percentage.
+            Console.WriteLine("Enter Mark Of Five Subject :");
+            
+            Console.Write("Enter Mark Of Subject 01 :");
+            double Mark1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter Mark Of Subject 02 :");
+            double Mark2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter Mark Of Subject 03 :");
+            double Mark3 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter Mark Of Subject 04 :");
+            double Mark4 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter Mark Of Subject 05 :");
+            double Mark5 = double.Parse(Console.ReadLine());
+
+            double Total, Average, Percentage;
+
+            Total = Mark5 + Mark4 + Mark3 + Mark2 + Mark1;
+            Average = Total / 5;
+            Percentage = (Total / 500) * 100;
+
+            Console.WriteLine($"Total = {Total} ");
+            Console.WriteLine($"Average = {Average}");
+            Console.WriteLine($"Percentage = {Percentage}%");
+
+
 
 
             #endregion
