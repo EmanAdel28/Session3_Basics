@@ -196,6 +196,32 @@ namespace Demo_Session3_C__Basics
 
             #endregion
 
+            #region GOTO
+            Console.WriteLine("Enter Option");
+            int option = int.Parse(Console.ReadLine());
+
+            // 3000 => "Option 01" , "Option 02" , "Option 03"
+            // 2000 => "Option 01" , "Option 02" 
+            // 1000 => "Option 01" 
+
+            switch(option)
+            {
+                case 3000:
+                    Console.WriteLine("Option 03");
+                    goto case 2000;
+                case 2000:
+                    Console.WriteLine("Option 02");
+                    goto case 1000;
+                case 1000:
+                    Console.WriteLine("Option 01");
+                    break;
+
+            }
+
+
+
+            #endregion
+
         }
     }
 }
