@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace Demo_Session3_C__Basics
 {
@@ -267,6 +268,30 @@ namespace Demo_Session3_C__Basics
             Console.WriteLine("Explanation What Happen");
             Console.WriteLine("When assigning one value type variable to another, a copy is made.");
             Console.WriteLine("Modifying one variable does not affect the other.Because we assigning Value not Address");
+            #endregion
+
+            #region 22- Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
+
+            Point P01 = new Point();
+            P01.X = 5;
+            P01.Y = 10;
+
+            Point P02 = new Point();
+            P02 = P01;
+
+            Console.WriteLine("Point P01 is : " + P01.X);
+            Console.WriteLine("Point P02 is : " + P02.X);
+
+            // Modifying The Value of P01
+            P01.X = 20;
+            Console.WriteLine("Point P01 After Modifying : " + P01.X);
+            Console.WriteLine("Point P02 After Modifying : " + P02.X);
+
+
+            Console.WriteLine("************************************************");
+            Console.WriteLine("Explanation What Happen");
+            Console.WriteLine("P01 and P02 are reference type variables, pointing to the same object in memory.");
+            Console.WriteLine("When P01 is modified, the change is reflected in P02 because they reference the same object.");
             #endregion
         }
     }
