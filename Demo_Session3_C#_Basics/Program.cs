@@ -1,4 +1,6 @@
-﻿namespace Demo_Session3_C__Basics
+﻿using System;
+
+namespace Demo_Session3_C__Basics
 {
     internal class Program
     {
@@ -128,37 +130,71 @@
             #endregion
 
             #region 10- Write a program to enter marks of five subjects and calculate total, average and percentage.
-            Console.WriteLine("Enter Mark Of Five Subject :");
+            //Console.WriteLine("Enter Mark Of Five Subject :");
             
-            Console.Write("Enter Mark Of Subject 01 :");
-            double Mark1 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter Mark Of Subject 01 :");
+            //double Mark1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter Mark Of Subject 02 :");
-            double Mark2 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter Mark Of Subject 02 :");
+            //double Mark2 = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter Mark Of Subject 03 :");
-            double Mark3 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter Mark Of Subject 03 :");
+            //double Mark3 = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter Mark Of Subject 04 :");
-            double Mark4 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter Mark Of Subject 04 :");
+            //double Mark4 = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter Mark Of Subject 05 :");
-            double Mark5 = double.Parse(Console.ReadLine());
+            //Console.Write("Enter Mark Of Subject 05 :");
+            //double Mark5 = double.Parse(Console.ReadLine());
 
-            double Total, Average, Percentage;
+            //double Total, Average, Percentage;
 
-            Total = Mark5 + Mark4 + Mark3 + Mark2 + Mark1;
-            Average = Total / 5;
-            Percentage = (Total / 500) * 100;
+            //Total = Mark5 + Mark4 + Mark3 + Mark2 + Mark1;
+            //Average = Total / 5;
+            //Percentage = (Total / 500) * 100;
 
-            Console.WriteLine($"Total = {Total} ");
-            Console.WriteLine($"Average = {Average}");
-            Console.WriteLine($"Percentage = {Percentage}%");
+            //Console.WriteLine($"Total = {Total} ");
+            //Console.WriteLine($"Average = {Average}");
+            //Console.WriteLine($"Percentage = {Percentage}%");
 
 
 
 
             #endregion
+
+            #region 11- Write a program to input the month number and print the number of days in that month.
+
+            Console.Write("Enter the month number (1-12): ");
+            int month = int.Parse(Console.ReadLine());
+
+            switch(month)
+            {
+                case 1: 
+                case 3: 
+                case 5: 
+                case 7: 
+                case 8: 
+                case 10: 
+                case 12:
+                    Console.WriteLine("Number of days : 31");
+                    break;
+
+                case 4: 
+                case 6: 
+                case 9: 
+                case 11:
+                    Console.WriteLine("Number of days : 30");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Number of days : 28");
+                    break;
+
+
+            }
+            #endregion
+
+
         }
     }
 }
