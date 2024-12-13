@@ -253,45 +253,57 @@ namespace Demo_Session3_C__Basics
             #endregion
 
             #region 21- Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
-            int X;
-            X = 10;
-            int Y = X;
-            Console.WriteLine($"The initial value of X = {X} ");
-            Console.WriteLine($"The initial value of Y = {Y} ");
+            //int X;
+            //X = 10;
+            //int Y = X;
+            //Console.WriteLine($"The initial value of X = {X} ");
+            //Console.WriteLine($"The initial value of Y = {Y} ");
 
-            // Modifying Value of Variable x
-            X = 5;
-            Console.WriteLine($"The value of X After Modifying = {X} ");
-            Console.WriteLine($"The value of Y After Modifying = {Y} ");
+            //// Modifying Value of Variable x
+            //X = 5;
+            //Console.WriteLine($"The value of X After Modifying = {X} ");
+            //Console.WriteLine($"The value of Y After Modifying = {Y} ");
 
-            Console.WriteLine("************************************************");
-            Console.WriteLine("Explanation What Happen");
-            Console.WriteLine("When assigning one value type variable to another, a copy is made.");
-            Console.WriteLine("Modifying one variable does not affect the other.Because we assigning Value not Address");
+            //Console.WriteLine("************************************************");
+            //Console.WriteLine("Explanation What Happen");
+            //Console.WriteLine("When assigning one value type variable to another, a copy is made.");
+            //Console.WriteLine("Modifying one variable does not affect the other.Because we assigning Value not Address");
             #endregion
 
             #region 22- Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
 
-            Point P01 = new Point();
-            P01.X = 5;
-            P01.Y = 10;
+            //Point P01 = new Point();
+            //P01.X = 5;
+            //P01.Y = 10;
 
-            Point P02 = new Point();
-            P02 = P01;
+            //Point P02 = new Point();
+            //P02 = P01;
 
-            Console.WriteLine("Point P01 is : " + P01.X);
-            Console.WriteLine("Point P02 is : " + P02.X);
+            //Console.WriteLine("Point P01 is : " + P01.X);
+            //Console.WriteLine("Point P02 is : " + P02.X);
 
-            // Modifying The Value of P01
-            P01.X = 20;
-            Console.WriteLine("Point P01 After Modifying : " + P01.X);
-            Console.WriteLine("Point P02 After Modifying : " + P02.X);
+            //// Modifying The Value of P01
+            //P01.X = 20;
+            //Console.WriteLine("Point P01 After Modifying : " + P01.X);
+            //Console.WriteLine("Point P02 After Modifying : " + P02.X);
 
 
-            Console.WriteLine("************************************************");
-            Console.WriteLine("Explanation What Happen");
-            Console.WriteLine("P01 and P02 are reference type variables, pointing to the same object in memory.");
-            Console.WriteLine("When P01 is modified, the change is reflected in P02 because they reference the same object.");
+            //Console.WriteLine("************************************************");
+            //Console.WriteLine("Explanation What Happen");
+            //Console.WriteLine("P01 and P02 are reference type variables, pointing to the same object in memory.");
+            //Console.WriteLine("When P01 is modified, the change is reflected in P02 because they reference the same object.");
+            #endregion
+
+            #region 23- Which of the following statements is correct about the C#.NET code snippet given below?
+            int d;
+            d = Convert.ToInt32(!(30 < 20));
+
+            // (30 < 20) => false
+            // !(30 < 20) => !(false) => true
+            // convert true to int is 1
+            // so 1 will be assigned to d
+
+            // the correct statement is : b) A value 1 will be assigned to d.
             #endregion
         }
     }
