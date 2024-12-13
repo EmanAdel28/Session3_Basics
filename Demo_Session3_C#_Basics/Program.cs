@@ -122,7 +122,7 @@ namespace Demo_Session3_C__Basics
             //     Power = Power * Number1;
 
             //}
-            
+
 
             //Console.Write($" {Number1} Power {Number2} is : {Power} ");
 
@@ -131,7 +131,7 @@ namespace Demo_Session3_C__Basics
 
             #region 10- Write a program to enter marks of five subjects and calculate total, average and percentage.
             //Console.WriteLine("Enter Mark Of Five Subject :");
-            
+
             //Console.Write("Enter Mark Of Subject 01 :");
             //double Mark1 = double.Parse(Console.ReadLine());
 
@@ -164,37 +164,68 @@ namespace Demo_Session3_C__Basics
 
             #region 11- Write a program to input the month number and print the number of days in that month.
 
-            Console.Write("Enter the month number (1-12): ");
-            int month = int.Parse(Console.ReadLine());
+            //Console.Write("Enter the month number (1-12): ");
+            //int month = int.Parse(Console.ReadLine());
 
-            switch(month)
-            {
-                case 1: 
-                case 3: 
-                case 5: 
-                case 7: 
-                case 8: 
-                case 10: 
-                case 12:
-                    Console.WriteLine("Number of days : 31");
-                    break;
+            //switch(month)
+            //{
+            //    case 1: 
+            //    case 3: 
+            //    case 5: 
+            //    case 7: 
+            //    case 8: 
+            //    case 10: 
+            //    case 12:
+            //        Console.WriteLine("Number of days : 31");
+            //        break;
 
-                case 4: 
-                case 6: 
-                case 9: 
-                case 11:
-                    Console.WriteLine("Number of days : 30");
-                    break;
+            //    case 4: 
+            //    case 6: 
+            //    case 9: 
+            //    case 11:
+            //        Console.WriteLine("Number of days : 30");
+            //        break;
 
-                case 2:
-                    Console.WriteLine("Number of days : 28");
-                    break;
+            //    case 2:
+            //        Console.WriteLine("Number of days : 28");
+            //        break;
 
 
-            }
+            //}
             #endregion
 
+            #region 17- Create a program that asks the user to input three points (x1, y1), (x2, y2), and (x3, y3), and determines whether these points lie on a single straight line.
+            Console.WriteLine("Enter the coordinates of three points:");
 
-        }
+            Console.Write("Enter x1: ");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter y1: ");
+            int y1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter x2: ");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.Write("Enter y2: ");
+            int y2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter x3: ");
+            int x3 = int.Parse(Console.ReadLine());
+            Console.Write("Enter y3: ");
+            int y3 = int.Parse(Console.ReadLine());
+
+            // Check if the points are collinear
+            bool areCollinear = (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1);
+
+            // Output the result
+            if (areCollinear)
+                Console.WriteLine("The points lie on a straight line.");
+
+            else
+                Console.WriteLine("The points do not lie on a straight line.");
+            
+        
+        #endregion
+
+
+    }
     }
 }
