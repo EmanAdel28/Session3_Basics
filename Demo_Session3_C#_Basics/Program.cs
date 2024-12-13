@@ -242,42 +242,7 @@ namespace Demo_Session3_C__Basics
 
             }
             #endregion
-            #region C# 07
-            object obj = new object();
-            obj = 22;
-            switch (obj)
-            {
-                case  int Number when Number >10 && Number < 20:
-                    Console.WriteLine($"{Number} is int");
-                    break;
-                case string Name:
-                    Console.WriteLine($"{Name} is String");
-                    break;
-                case bool Flag:
-                    Console.WriteLine($"{Flag} is bool");
-                    break;
-            }
-            #endregion
-            #region C# 08
-            Console.WriteLine("Enter Option");
-            int option = int.Parse(Console.ReadLine());
 
-            String Mess = option switch
-            {
-                1 => "Option 01",
-                2 => "Option 02",
-                3 => "Option 03",
-                _ => "Invalid"
-
-            };
-            Console.WriteLine(Mess);
-            #endregion
-            #region C# 09
-            { Age: > 22 and <25}
-            { Age: > 25 or < 23}
-            { Age: not 25}  
-
-            #endregion
             #endregion
 
 
