@@ -258,6 +258,21 @@ namespace Demo_Session3_C__Basics
                     break;
             }
             #endregion
+            #region C# 08
+            Console.WriteLine("Enter Option");
+            int option = int.Parse(Console.ReadLine());
+
+            String Mess = option switch
+            {
+                1 => "Option 01",
+                2 => "Option 02",
+                3 => "Option 03",
+                _ => "Invalid"
+
+            };
+            Console.WriteLine(Mess);
+            #endregion
+            
 
 
             #endregion
