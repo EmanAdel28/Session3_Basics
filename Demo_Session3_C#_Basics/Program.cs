@@ -24,15 +24,20 @@
             #region Parse [Convert from String to any Datatype]
             //int Number = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter Data");
-            Console.WriteLine("Enter Name : ");
-            string Name = Console.ReadLine();
+            //Console.WriteLine("Enter Data");
+            //Console.WriteLine("Enter Name : ");
+            //string Name = Console.ReadLine();
 
-            Console.WriteLine("Enter Age : ");
-            int Age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Age : ");
+            //int Age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter Salary : ");
-            double Salary = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Salary : ");
+            //double Salary = double.Parse(Console.ReadLine());
+            #endregion
+
+            #region Convert [Convert From any datatype to any datatype]
+            int Age = Convert.ToInt32(Console.ReadLine());
+            double Salary = Convert.ToDouble(Console.ReadLine());
             #endregion
 
             #endregion
