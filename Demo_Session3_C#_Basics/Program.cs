@@ -1,4 +1,6 @@
-﻿namespace Demo_Session3_C__Basics
+﻿using System.Linq.Expressions;
+
+namespace Demo_Session3_C__Basics
 {
     internal class Program
     {
@@ -121,6 +123,13 @@
 
             //String Message  = X > 4 ? "X Greater Than 4" : "X Less Than 4"
             #endregion
+            #endregion
+
+            #region Operator Periorety
+            //1- Unary Operator[PreFif]
+            //2- ( )
+            //3- * / %
+            //4- + -
             #endregion
 
 
