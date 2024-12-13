@@ -77,10 +77,27 @@
             #endregion
 
             #region Relational Operator
-            int A = 5;
-            int B = 10;
-            Console.WriteLine(A == B);
-            Console.WriteLine(A < B);
+            //int A = 5;
+            //int B = 10;
+            //Console.WriteLine(A == B);
+            //Console.WriteLine(A < B);
+            #endregion
+
+            #region Logical Operator [Short Circute]
+
+            Console.WriteLine(true && false);
+
+            //true && true  => true
+            //true && false => false
+            //false && true => false
+            //false && false => false
+
+            Console.WriteLine(true || false);
+
+            //true || true  => true
+            //true || false => true
+            //false || true => true
+            //false || false => false
             #endregion
             #endregion
 
