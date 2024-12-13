@@ -41,7 +41,16 @@
             #endregion
 
             #region Operators
+            #region Unary Operators [++ , --]
+            int X = 5;
 
+            Console.WriteLine(++X);
+            Console.WriteLine(X++);
+
+            Console.WriteLine(--X);
+            Console.WriteLine(X--);
+            Console.WriteLine(X);
+            #endregion
             #endregion
 
             #endregion
