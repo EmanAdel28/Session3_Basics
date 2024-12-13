@@ -251,6 +251,23 @@ namespace Demo_Session3_C__Basics
 
             #endregion
 
+            #region 21- Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+            int X;
+            X = 10;
+            int Y = X;
+            Console.WriteLine($"The initial value of X = {X} ");
+            Console.WriteLine($"The initial value of Y = {Y} ");
+
+            // Modifying Value of Variable x
+            X = 5;
+            Console.WriteLine($"The value of X After Modifying = {X} ");
+            Console.WriteLine($"The value of Y After Modifying = {Y} ");
+
+            Console.WriteLine("************************************************");
+            Console.WriteLine("Explanation What Happen");
+            Console.WriteLine("When assigning one value type variable to another, a copy is made.");
+            Console.WriteLine("Modifying one variable does not affect the other.Because we assigning Value not Address");
+            #endregion
         }
     }
 }
