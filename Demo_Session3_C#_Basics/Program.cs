@@ -195,37 +195,62 @@ namespace Demo_Session3_C__Basics
             #endregion
 
             #region 17- Create a program that asks the user to input three points (x1, y1), (x2, y2), and (x3, y3), and determines whether these points lie on a single straight line.
-            Console.WriteLine("Enter the coordinates of three points:");
+            //Console.WriteLine("Enter the coordinates of three points:");
 
-            Console.Write("Enter x1: ");
-            int x1 = int.Parse(Console.ReadLine());
-            Console.Write("Enter y1: ");
-            int y1 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter x1: ");
+            //int x1 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter y1: ");
+            //int y1 = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter x2: ");
-            int x2 = int.Parse(Console.ReadLine());
-            Console.Write("Enter y2: ");
-            int y2 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter x2: ");
+            //int x2 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter y2: ");
+            //int y2 = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter x3: ");
-            int x3 = int.Parse(Console.ReadLine());
-            Console.Write("Enter y3: ");
-            int y3 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter x3: ");
+            //int x3 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter y3: ");
+            //int y3 = int.Parse(Console.ReadLine());
 
-            // Check if the points are collinear
-            bool areCollinear = (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1);
+            //// Check if the points are collinear
+            //bool areCollinear = (y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1);
 
-            // Output the result
-            if (areCollinear)
-                Console.WriteLine("The points lie on a straight line.");
+            //// Output the result
+            //if (areCollinear)
+            //    Console.WriteLine("The points lie on a straight line.");
 
-            else
-                Console.WriteLine("The points do not lie on a straight line.");
-            
-        
-        #endregion
+            //else
+            //    Console.WriteLine("The points do not lie on a straight line.");
 
 
-    }
+            #endregion
+
+            #region 18- Within a company, the efficiency of workers is evaluated based on the duration required to complete a specific task
+            //Console.Write("Enter the time taken to complete the task (in hours): ");
+            //double timeTaken = double.Parse(Console.ReadLine());
+
+            //if (timeTaken >= 2 && timeTaken <= 3)
+            //    Console.WriteLine("The worker is highly efficient.");
+
+            //else if (timeTaken > 3 && timeTaken <= 4)
+            //    Console.WriteLine("increase their speed.");
+
+            //else if (timeTaken > 4 && timeTaken <= 5)
+            //    Console.WriteLine("The worker is instructed to increase their speed.");
+
+            //else if (timeTaken > 4 && timeTaken <= 5)
+            //    Console.WriteLine("The worker is provided with training to enhance their speed.");
+
+            //else if (timeTaken > 5)
+            //    Console.WriteLine("The worker is required to leave the company.");
+            //else
+            //    Console.WriteLine("Invalid input.");
+
+
+
+
+            #endregion
+
+        }
     }
 }
