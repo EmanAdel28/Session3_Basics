@@ -68,12 +68,19 @@
             #endregion
 
             #region Assignment Operator
-            X = 10;
-            X += 10;
-            X -= 10;
-            X *= 10;
-            X /= 10;
-            X %= 10;
+            //X = 10;
+            //X += 10;
+            //X -= 10;
+            //X *= 10;
+            //X /= 10;
+            //X %= 10;
+            #endregion
+
+            #region Relational Operator
+            int A = 5;
+            int B = 10;
+            Console.WriteLine(A == B);
+            Console.WriteLine(A < B);
             #endregion
             #endregion
 
