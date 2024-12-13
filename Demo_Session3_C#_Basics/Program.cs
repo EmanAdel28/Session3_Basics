@@ -45,14 +45,14 @@ namespace Demo_Session3_C__Basics
 
             #region Operators
             #region Unary Operators [++ , --]
-            int X = 5;
+            //int X = 5;
 
-            Console.WriteLine(++X);
-            Console.WriteLine(X++);
+            //Console.WriteLine(++X);
+            //Console.WriteLine(X++);
 
-            Console.WriteLine(--X);
-            Console.WriteLine(X--);
-            Console.WriteLine(X);
+            //Console.WriteLine(--X);
+            //Console.WriteLine(X--);
+            //Console.WriteLine(X);
             #endregion
 
             #region Binary Operator
@@ -132,6 +132,21 @@ namespace Demo_Session3_C__Basics
             //4- + -
             #endregion
 
+            #region String Formating
+            // Equation = X + Y = Result
+            // Equation = 10 + 5 = 15
+
+            int X = 5;
+            int Y = 10;
+            int Result = X + Y;
+
+            //Console.WriteLine("Equation : " + X + " + " + Y + " = " + Result);
+            ///// String => Immutable Datatype
+
+
+
+
+            #endregion
 
         }
     }
