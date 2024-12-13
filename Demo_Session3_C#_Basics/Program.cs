@@ -156,6 +156,9 @@ namespace Demo_Session3_C__Basics
             Console.WriteLine($"Equation = {X} + {Y} = {Result}");
             #endregion
 
+
+            #endregion
+
             #region IF Else - Switch Case
             Console.WriteLine("Enter Month Number");
             int MonthNumber = int.Parse(Console.ReadLine());
@@ -190,8 +193,6 @@ namespace Demo_Session3_C__Basics
             //        Console.WriteLine("Invalid Input");
             //        break;
             //}
-            #endregion
-
 
             #endregion
 
