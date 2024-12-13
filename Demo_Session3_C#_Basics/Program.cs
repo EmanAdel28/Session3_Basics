@@ -149,7 +149,7 @@ namespace Demo_Session3_C__Basics
             Console.WriteLine("Equation = {0} + {1} = {2}", X, Y, Result);
             #endregion
 
-            #region 1. String Manipolition
+            #region 2. String Manipolition
             // string Interpolation => $
          
             Console.WriteLine($"Equation = {X} + {Y} = {Result}");
