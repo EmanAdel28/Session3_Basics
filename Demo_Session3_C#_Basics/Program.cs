@@ -308,13 +308,31 @@ namespace Demo_Session3_C__Basics
 
             #region 24- Which of the following is the correct output for the C# code given below? Console.WriteLine(13 / 2 + " " + 13 % 2)
 
-            Console.WriteLine(13 / 2 + " " + 13 % 2);
+            //Console.WriteLine(13 / 2 + " " + 13 % 2);
 
             // 13 / 2 = 6.5
             // 13 % 2 = 1
 
             // Correct Statement is  d) 6.5  1
 
+            #endregion
+
+            #region 25- What will be the output of the C# code given below ? 
+
+            int num = 1, z = 5;
+
+
+            if (!(num <= 0))
+                Console.WriteLine(++num + z++ + " " + ++z);
+            else
+                Console.WriteLine(--num + z-- + " " + --z);
+
+            //  ( 1<= 0 ) => false
+            // !(false) => true
+
+            // 2 + 5  " " 7
+
+            // so the correct value is 7 7
             #endregion
 
         }
