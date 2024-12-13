@@ -91,16 +91,39 @@
             #endregion
 
             #region 7- Write a program that allows the user to insert an integer then print a multiplication table up to 12.
-            Console.Write("Entser Number ");
-            int Number = int.Parse(Console.ReadLine());
+            //Console.Write("Entser Number ");
+            //int Number = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"multiplication table for {Number} : ");
+            //Console.WriteLine($"multiplication table for {Number} : ");
 
-            for (int i = 1 ; i<= 12 ; i++)
+            //for (int i = 1 ; i<= 12 ; i++)
+            //{
+            //    int Mult = i * Number;
+            //    Console.WriteLine($" {Number} * {i}  = {Mult}");
+            //}
+
+            #endregion
+
+            #region 9- Write a program that takes two integers then prints the power.
+
+            Console.WriteLine("Entser Two Number ");
+
+            Console.Write("Entser  Number 01 :  ");
+            int Number1 = int.Parse(Console.ReadLine());
+            Console.Write("Entser  Number 02 :  ");
+            int Number2 = int.Parse(Console.ReadLine());
+            int Power=1;
+
+
+            for (int i = 1; i <= Number2; i++)
             {
-                int Mult = i * Number;
-                Console.WriteLine($" {Number} * {i}  = {Mult}");
+                 Power = Power * Number1;
+
             }
+            
+
+            Console.Write($" {Number1} Power {Number2} is : {Power} ");
+
 
             #endregion
         }
